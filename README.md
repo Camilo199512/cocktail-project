@@ -71,7 +71,26 @@ Crea las tablas necesarias en la base de datos:
 php artisan migrate
 ```
 
-### 🧪 6. Iniciar el servidor local
+### 👤 6. Crear un usuario administrador
+Utilizaremos Tinker para crear el primer usuario:
+
+```bash
+php artisan tinker
+```
+Dentro de la consola Tinker:
+```bash
+\App\Models\User::create([
+    'name' => 'Admin',
+    'email' => 'admin@example.com',
+    'password' => bcrypt('password'),
+]);
+```
+Luego escribe:
+```bash
+exit
+```
+
+### 🧪 7. Iniciar el servidor local
 Ejecuta el servidor de desarrollo de Laravel:
 
 ```bash
