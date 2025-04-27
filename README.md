@@ -55,7 +55,7 @@ En el archivo .env, configura los datos de tu base MySQL:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=cocktails_db
+DB_DATABASE=TheCocktailDB
 DB_USERNAME=root
 DB_PASSWORD=tu_contraseña
 ```
